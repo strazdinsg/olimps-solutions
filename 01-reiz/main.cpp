@@ -6,6 +6,9 @@ using namespace std;
 unsigned short readNumberFromFile(const char *filename);
 void writeNumberToFile(const char *filename, int number);
 
+//////////////////////////////////////////////////////////////
+/// Solution for "LIO Olimps" Problem Nr 1: Reizinasana ar 2
+//////////////////////////////////////////////////////////////
 int main() {
     unsigned short n = readNumberFromFile("reiz.in");
     writeNumberToFile("reiz.out", n * 2);

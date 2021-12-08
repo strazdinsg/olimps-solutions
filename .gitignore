@@ -1,8 +1,8 @@
 
-01-reiz/.idea/
+.idea
 
-01-reiz/cmake-build-debug/CMakeFiles/
-
-01-reiz/cmake-build-debug/
+cmake-build-debug
 
 01-reiz/reiz.out
+
+97-super/super.out

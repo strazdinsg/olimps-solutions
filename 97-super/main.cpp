@@ -10,11 +10,21 @@ void writeNumberToFile(const char *filename, unsigned number) {
     outputFile.close();
 }
 
+void stripBadChars(string &s) {
+    for (unsigned i = 0; i < s.length(); ++i) {
+        if (s[i] < '0' || s[i] > '9') {
+            s.erase(i, 1);
+        }
+    }
+}
+
 void readNumbersFromFile(const char *filename, string &k, string &m) {
     ifstream inputFile;
     inputFile.open(filename);
     getline(inputFile, k);
     getline(inputFile, m);
+    stripBadChars(k);
+    stripBadChars(m);
     inputFile.close();
 }
 

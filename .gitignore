@@ -1,10 +1,7 @@
-
 .idea
-
+.DS_Store
 cmake-build-debug
 
-01-reiz/reiz.out
 
-97-super/super.out
-
-.DS_Store
+1s-001-reiz/reiz.out
+1s-097-super/super.out

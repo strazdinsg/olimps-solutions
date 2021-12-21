@@ -1,0 +1,120 @@
+S 1000
+S 1
+K
+S 1000
+S 1
+K
+V
+
+###################
+Test cases
+###################
+
+---------------------------
+# Not moving anywhere
+---------------------------
+V
+
+
+---------------------------
+Moved north, need to get back
+---------------------------
+S 8
+V
+
+---------------------------
+Moved north, turned west
+---------------------------
+S 8
+K
+V
+
+---------------------------
+Moved north, turned east
+---------------------------
+S 8
+L
+V
+
+
+###################
+Default example given in the task description
+###################
+S 7
+L
+S 1
+K
+S 4
+K
+S 3
+K
+S 8
+V
+
+
+###################
+Default example, but turns to the west
+###################
+S 7
+L
+S 1
+K
+S 4
+K
+S 3
+K
+S 8
+L
+V
+
+###################
+Default example, but turns to the north
+###################
+S 7
+L
+S 1
+K
+S 4
+K
+S 3
+K
+S 8
+L
+L
+V
+
+###################
+Default example, but turns east
+###################
+S 7
+L
+S 1
+K
+S 4
+K
+S 3
+K
+S 8
+K
+V
+
+###################
+Moves one full step up and left, turns south
+###################
+S 1000
+K
+S 1000
+K
+V
+
+###################
+Moves one full step up and left plus a bit, turns south
+###################
+S 1000
+S 1
+K
+S 1000
+S 1
+K
+V
+

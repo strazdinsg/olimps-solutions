@@ -30,7 +30,7 @@ bool containsDigit(unsigned int x, unsigned short digit) {
 }
 
 unsigned short cik(unsigned int x, unsigned short y) {
-    unsigned short cik = 0;
+    unsigned short cik = 1;
     while (!containsDigit(x + cik, y)) {
         ++cik;
     }

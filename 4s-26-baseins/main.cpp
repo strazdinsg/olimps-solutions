@@ -8,10 +8,27 @@ using namespace std;
 /// Solution for "LIO Olimps" Problem Nr 26: Baseins, 4 stars
 ///////////////////////////////////////////////////////////////////////////////
 
+const unsigned MAX_ROWS = 100;
+const unsigned MAX_COLS = 100;
+unsigned rowCount, colCount;
+unsigned heights[MAX_ROWS][MAX_COLS];
+
 void readAreaFromFile(const char *filename) {
     ifstream inputFile;
     inputFile.open(filename);
-    // TODO
+    inputFile >> rowCount >> colCount;
+    for (int i = 0; i < rowCount; ++i) {
+        for (int j = 0; j < colCount; ++j) {
+            inputFile >> heights[i][j];
+        }
+    }
+}
+
+void writeAnswerToFile(const char *filename, unsigned long long waterAmount) {
+    ofstream outputFile;
+    outputFile.open(filename);
+    outputFile << waterAmount << endl;
+    outputFile.close();
 }
 
 struct Cell {
@@ -30,13 +47,6 @@ public:
         return c;
     }
 };
-
-void writeAnswerToFile(const char *filename, unsigned long long waterAmount) {
-    ofstream outputFile;
-    outputFile.open(filename);
-    outputFile << waterAmount << endl;
-    outputFile.close();
-}
 
 void markWallContour(list<Cell> &contour) {
     // TODO

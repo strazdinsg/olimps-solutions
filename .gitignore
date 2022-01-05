@@ -17,3 +17,5 @@ cmake-build-debug
 2s-038-taka/taka.out
 
 4s-26-baseins/baseins.out
+
+*.out
